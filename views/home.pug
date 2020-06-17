@@ -1,0 +1,9 @@
+extends layouts/main
+
+block content
+    .container
+        ul
+            each item in queries
+                li.item-row
+                    a(href=routes.search(item.country)) #{item.country}
+    

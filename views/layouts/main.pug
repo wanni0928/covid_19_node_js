@@ -1,0 +1,12 @@
+html
+    head
+        title #{pageTitle} | #{siteName}
+        script(src="https://kit.fontawesome.com/78a3c971bf.js",crossorigin="anonymous")
+        link(rel="stylesheet", href="/static/styles.css")
+        link(href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet")
+    body
+        include ../partials/header
+        main
+            block content
+        include ../partials/footer
+        script(src="/static/main.js")

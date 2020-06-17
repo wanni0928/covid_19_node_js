@@ -1,0 +1,22 @@
+extends layouts/main
+
+block content
+    .container
+        h2.country #{queries.country}
+        ul
+            li.item-row
+                span new : #{queries.cases.new}
+            li.item-row
+                span active : #{queries.cases.active}
+            li.item-row
+                span critical : #{queries.cases.critical}
+            li.item-row
+                span recovered : #{queries.cases.recovered}
+            li.item-row
+                span total cases : #{queries.cases.total}
+            li.item-row
+                span deaths new : #{queries.deaths.new}
+            li.item-row
+                span deaths total : #{queries.deaths.total}
+            li.item-row
+                span day #{queries.day}
